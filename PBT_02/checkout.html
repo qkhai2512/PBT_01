@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+</head>
+<body>
+
+<h1>Giỏ hàng</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>SL</th>
+            <th>Thành tiền</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>iPhone</td>
+            <td>20tr</td>
+            <td>1</td>
+            <td>20tr</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="4">Tổng</td>
+            <td>20tr</td>
+        </tr>
+    </tfoot>
+</table>
+
+<h2>Thanh toán</h2>
+
+<form>
+
+    <p>Phương thức</p>
+    <input type="radio" name="pay"> COD
+    <input type="radio" name="pay"> Bank
+    <input type="radio" name="pay"> Ví
+
+    <br><br>
+
+    <label>Mã giảm giá</label>
+    <input type="text" pattern="SALE[0-9]{4}">
+
+    <br><br>
+
+    <label>Ngày giao</label>
+    <input type="date">
+
+    <br><br>
+
+    <label>Khung giờ</label>
+    <select>
+        <option>Sáng</option>
+        <option>Chiều</option>
+        <option>Tối</option>
+    </select>
+
+    <br><br>
+
+    <input type="range" min="1" max="7">
+
+    <br><br>
+
+    <button type="submit" aria-label="Xác nhận đặt hàng">Đặt hàng</button>
+
+</form>
+
+</body>
+</html>

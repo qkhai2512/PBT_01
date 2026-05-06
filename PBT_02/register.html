@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+<body>
+
+<h1>Form đăng ký</h1>
+
+<form action="#" method="POST">
+
+    <fieldset>
+        <legend>Thông tin cá nhân</legend>
+
+        <label for="name">Họ tên</label>
+        <input type="text" id="name" placeholder="Nhập họ tên" required minlength="2" maxlength="50"><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Nhập email" required><br>
+
+        <label for="phone">SĐT</label>
+        <input type="tel" id="phone" placeholder="0123456789" pattern="[0-9]{10}"><br>
+
+        <label for="dob">Ngày sinh</label>
+        <input type="date" id="dob" max="2026-01-01"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Tài khoản</legend>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="abc123" pattern="[A-Za-z0-9_]{3,20}"><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="********" minlength="8"
+               pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"><br>
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" placeholder="Nhập lại"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Giao hàng</legend>
+
+        <label for="city">Thành phố</label>
+        <select id="city">
+            <option>Hà Nội</option>
+            <option>TP.HCM</option>
+            <option>Đà Nẵng</option>
+            <option>Hải Phòng</option>
+            <option>Cần Thơ</option>
+        </select><br>
+
+        <label for="address">Địa chỉ</label>
+        <textarea id="address" rows="3" placeholder="Nhập địa chỉ"></textarea><br>
+
+        <p>Giới tính</p>
+        <input type="radio" name="gender"> Nam
+        <input type="radio" name="gender"> Nữ
+        <input type="radio" name="gender"> Khác
+    </fieldset>
+
+    <input type="checkbox" required> Đồng ý điều khoản<br><br>
+
+    <button type="submit">Đăng ký</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
