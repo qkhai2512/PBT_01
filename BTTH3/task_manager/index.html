@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="app-header">
+
+        <h1>Personal Task Manager</h1>
+
+        <button id="openFormBtn">
+            + Add Task
+        </button>
+
+    </header>
+
+    <!-- STATISTICS -->
+
+    <section class="stats-section">
+
+        <div class="stat-card">
+            <h3>Total Tasks</h3>
+            <p id="totalTasks">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Completed</h3>
+            <p id="completedTasks">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Pending</h3>
+            <p id="pendingTasks">0</p>
+        </div>
+
+    </section>
+
+    <!-- MESSAGE -->
+
+    <div id="messageBox"></div>
+
+    <!-- TASK LIST -->
+
+    <section class="task-section">
+
+        <div id="taskList" class="task-list">
+
+            <!-- Render tasks here -->
+
+        </div>
+
+    </section>
+
+    <!-- POPUP FORM -->
+
+    <div id="taskModal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <button id="closeFormBtn" class="close-btn">
+                ×
+            </button>
+
+            <h2 id="formTitle">
+                Add New Task
+            </h2>
+
+            <form id="taskForm">
+
+                <input type="hidden" id="taskId">
+
+                <!-- TITLE -->
+
+                <div class="form-group">
+
+                    <label for="title">
+                        Task Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        required
+                    >
+
+                </div>
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="4"
+                    ></textarea>
+
+                </div>
+
+                <!-- DEADLINE -->
+
+                <div class="form-group">
+
+                    <label for="deadline">
+                        Deadline
+                    </label>
+
+                    <input
+                        type="date"
+                        id="deadline"
+                        required
+                    >
+
+                </div>
+
+                <!-- PRIORITY -->
+
+                <div class="form-group">
+
+                    <label for="priority">
+                        Priority
+                    </label>
+
+                    <select id="priority">
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+                        <option value="High">
+                            High
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- SUBMIT -->
+
+                <button type="submit" id="saveTaskBtn">
+                    Save Task
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
