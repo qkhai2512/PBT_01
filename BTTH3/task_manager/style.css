@@ -267,3 +267,155 @@ table td {
     }
 
 }
+.dashboard {
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+/* TOPBAR */
+
+.topbar {
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+.topbar p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* TABLE SECTION */
+
+.table-section {
+    background: white;
+    margin-top: 30px;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.table-header {
+    margin-bottom: 20px;
+}
+
+.table-header h2 {
+    color: #1e293b;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+}
+
+thead {
+    background: #f8fafc;
+}
+
+thead th {
+    padding: 18px;
+}
+
+tbody tr {
+    transition: 0.3s;
+}
+
+tbody tr:hover {
+    background: #f1f5f9;
+}
+
+/* STATUS */
+
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 999px;
+
+    color: white;
+    font-size: 0.9rem;
+}
+
+.status-completed {
+    background: #16a34a;
+}
+
+.status-pending {
+    background: #dc2626;
+}
+
+/* BUTTONS */
+
+.edit-btn {
+    background: orange;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background: red;
+}
+
+/* PRIORITY */
+
+.priority-high {
+    color: red;
+}
+
+.priority-medium {
+    color: orange;
+}
+
+.priority-low {
+    color: green;
+}
+
+/* MODAL */
+
+.modal-content {
+    animation: modalShow 0.3s ease;
+}
+
+@keyframes modalShow {
+
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .topbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    table {
+        min-width: 800px;
+    }
+
+}
