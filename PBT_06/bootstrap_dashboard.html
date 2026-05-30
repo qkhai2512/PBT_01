@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bootstrap Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+<div class="row">
+
+<!-- Sidebar -->
+
+<div
+class="col-md-2 bg-dark text-white min-vh-100 p-3">
+
+<h3>Admin</h3>
+
+<div class="list-group">
+
+<a class="list-group-item">
+Dashboard
+</a>
+
+<a class="list-group-item">
+Orders
+</a>
+
+<a class="list-group-item">
+Products
+</a>
+
+</div>
+
+</div>
+
+<!-- Main -->
+
+<div class="col-md-10">
+
+<nav class="navbar bg-light mb-4">
+
+<div class="container-fluid">
+
+<span>
+Dashboard
+</span>
+
+<div class="dropdown">
+
+<button
+class="btn btn-secondary dropdown-toggle"
+data-bs-toggle="dropdown">
+
+Admin
+
+</button>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item">
+Profile
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Stats -->
+
+<div class="row g-3 mb-4">
+
+<div class="col-md-3">
+<div class="card bg-primary text-white">
+<div class="card-body">
+Users
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card bg-success text-white">
+<div class="card-body">
+Orders
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card bg-warning text-dark">
+<div class="card-body">
+Products
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card bg-danger text-white">
+<div class="card-body">
+Revenue
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Table -->
+
+<table class="table table-striped table-hover">
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Customer</th>
+<th>Status</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>Nguyen Van A</td>
+<td>Completed</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Tran Van B</td>
+<td>Pending</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<!-- Search -->
+
+<div class="input-group my-4">
+
+<input
+type="text"
+class="form-control"
+placeholder="Search">
+
+<button class="btn btn-primary">
+Search
+</button>
+
+</div>
+
+<!-- Alert -->
+
+<div class="alert alert-success">
+
+Data loaded successfully
+
+</div>
+
+<!-- Accordion -->
+
+<div class="accordion">
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+class="accordion-button"
+data-bs-toggle="collapse"
+data-bs-target="#faq1">
+
+FAQ 1
+
+</button>
+
+</h2>
+
+<div
+id="faq1"
+class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+Bootstrap Dashboard Example
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
