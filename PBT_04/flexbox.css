@@ -1,0 +1,80 @@
+body{
+    font-family:Arial;
+}
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:#1e293b;
+
+    color:white;
+}
+
+.menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+}
+
+.menu li:hover{
+
+    color:#60a5fa;
+
+    text-decoration:underline;
+
+    cursor:pointer;
+}
+
+.auth button{
+    margin-left:10px;
+}
+
+.products{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    padding:30px;
+}
+
+.card{
+
+    flex:0 0 calc(25% - 20px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    border:1px solid #ddd;
+
+    padding:20px;
+
+    min-height:220px;
+
+    transition:.3s;
+}
+
+.card button{
+
+    margin-top:auto;
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
