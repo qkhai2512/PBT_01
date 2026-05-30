@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixins";
+@import "components";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:$font-primary;
+    background:$light-color;
+    color:$text-color;
+}
+
+.header{
+
+    background:$primary-color;
+    color:white;
+
+    @include flex-center;
+
+    padding:$spacing-md;
+
+}
+
+.products{
+
+    display:grid;
+    grid-template-columns:1fr;
+    gap:$spacing-md;
+
+    padding:$spacing-lg;
+
+}
+
+@include respond-to(tablet){
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@include respond-to(desktop){
+
+    .products{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
