@@ -180,3 +180,32 @@ Nếu Rule A có !important:
 black
 
 Vì !important ưu tiên cao hơn.
+## C2 Cascade Puzzle
+
+Sản phẩm A
+
+- Font size: 20px
+- Color: green
+
+Mô tả sản phẩm
+
+- Color: blue
+
+Sản phẩm B
+
+- Font size: 20px
+- Color: blue
+
+Mô tả sản phẩm B
+
+- Color: green
+
+Giải thích:
+
+.highlight dùng !important nên thắng tất cả rule thường.
+
+.card p {
+    color: inherit;
+}
+
+sẽ kế thừa màu từ .card là blue.
