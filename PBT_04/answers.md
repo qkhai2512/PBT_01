@@ -91,3 +91,102 @@ căn giữa theo chiều dọc.
 [4][5][6]
 
 [7]
+## C1 Flexbox vs Grid
+
+### Navigation bar
+
+Flexbox
+
+Vì chỉ một chiều ngang.
+
+---
+
+### Instagram Grid
+
+Grid
+
+Vì bố cục dạng hàng và cột.
+
+---
+
+### Blog Layout
+
+Grid
+
+Main + Sidebar.
+
+---
+
+### Footer 4 cột
+
+Grid
+
+Quản lý nhiều cột dễ hơn.
+
+---
+
+### Product Card
+
+Flexbox
+
+Ảnh trên
+
+Text giữa
+
+Button dưới
+
+dùng flex-direction: column.
+## C2 Debug Flexbox
+
+### Lỗi 1
+
+Cards cao thấp khác nhau.
+
+Nguyên nhân:
+
+Nội dung khác nhau.
+
+Sửa:
+
+.card{
+    display:flex;
+    flex-direction:column;
+}
+
+.btn{
+    margin-top:auto;
+}
+
+---
+
+### Lỗi 2
+
+Item không nằm giữa.
+
+Nguyên nhân:
+
+Thiếu justify-content và align-items.
+
+Sửa:
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+---
+
+### Lỗi 3
+
+Sidebar bị co.
+
+Nguyên nhân:
+
+Flexbox cho phép shrink.
+
+Sửa:
+
+.sidebar{
+    flex-shrink:0;
+}
