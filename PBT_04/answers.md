@@ -26,3 +26,68 @@ thì absolute sẽ bám vào parent đó.
 Nếu không có positioned ancestor thì absolute bám theo body.
 
 Nearest Positioned Ancestor là phần tử cha gần nhất có thuộc tính position khác static.
+## A2 Flexbox vs Grid
+
+### Trường hợp 1
+
+display:flex
+
+4 items
+
+Bố cục:
+
+[1][2][3][4]
+
+Mỗi item chiếm 25%.
+
+---
+
+### Trường hợp 2
+
+6 items
+
+2 cột
+
+3 hàng
+
+[1][2]
+
+[3][4]
+
+[5][6]
+
+---
+
+### Trường hợp 3
+
+space-between
+
+[1]      [2]      [3]
+
+align-items:center
+
+căn giữa theo chiều dọc.
+
+---
+
+### Trường hợp 4
+
+200px 1fr 200px
+
+[Sidebar][Content][Ads]
+
+---
+
+### Trường hợp 5
+
+7 items
+
+3 cột
+
+3 hàng
+
+[1][2][3]
+
+[4][5][6]
+
+[7]
