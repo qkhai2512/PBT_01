@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Accessibility App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Keyboard Shortcuts Demo</h1>
+    <p>
+        ← → chuyển ảnh |
+        1-9 chọn ảnh |
+        Space Play/Pause |
+        Ctrl + K Command Palette |
+        Esc đóng modal
+    </p>
+</header>
+
+<section class="gallery">
+
+    <img
+        id="mainImage"
+        src="https://picsum.photos/id/1015/800/400"
+        alt="Gallery Image"
+    >
+
+    <div class="controls">
+        <button id="prevBtn" aria-label="Ảnh trước">◀</button>
+        <button id="nextBtn" aria-label="Ảnh tiếp">▶</button>
+        <button id="playBtn" aria-label="Play slideshow">
+            Play
+        </button>
+    </div>
+
+    <div class="thumbnails" id="thumbnails"></div>
+
+</section>
+
+<!-- COMMAND PALETTE -->
+
+<div id="commandPalette" class="palette hidden">
+
+    <div class="palette-box">
+
+        <input
+            type="text"
+            id="commandInput"
+            placeholder="Search commands..."
+            aria-label="Command Search"
+        >
+
+        <ul id="commandList"></ul>
+
+    </div>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="imageModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <img
+            id="modalImage"
+            src=""
+            alt="Modal Image"
+        >
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
